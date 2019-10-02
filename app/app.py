@@ -1,5 +1,5 @@
 import os
-
+import numpy
 from flask import Flask, render_template, request
 from flask_migrate import Migrate
 from flask_sqlalchemy import SQLAlchemy
