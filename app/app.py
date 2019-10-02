@@ -49,6 +49,4 @@ def register_guest():
 
     return render_template(
         'guest_confirmation.html', name=name, email=email)
-class OAuth(OAuthConsumerMixin, db.Model):
-    user_id = db.Column(db.Integer, db.ForeignKey(User.id))
-    user = db.relationship(User)
+
